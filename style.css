@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: Montserrat;
+  font-weight: 600;
+  background-color: #fff;
+  
+}
+
+/* OverRide */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+/* OverRide */
+
+
+
+/* Html combining selector */
+
+li, a, button{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Html combining selector */
+
+
+
+/* Section */
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #25252a;
+}
+
+/* Section */
+
+
+
+/* Logo */
+
+.logo{
+  margin-right: auto;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.logo:hover{
+  color: #3ddc84;
+  background-color: #555;
+  border-radius: 10px;
+}
+
+/* Logo */
+
+
+
+/* Navlinks */
+.nav-links{
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li{
+
+  padding: 0px 10px;
+  
+}
+
+.nav-links li a{
+  transition: all 0.2s linear ;
+  display: block;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.nav-links li a:hover{
+  transition: all 0.2s linear ;
+  color: #0088a9;
+  background-color: #555;
+  border-radius: 10px;
+}
+
+/* NavLinks */
+
+
+
+
+
+
+/* Contact colors*/
+
+/* Contact Button */
+
+.Contact-Button{
+  padding: 0 20px;
+  border-style: none;
+}
+
+/* Contact-Button */
+
+/* Contact  */
+
+button{
+  padding: 9px 25px;
+  border-color: white;
+  border: 5px solid #3ddc84;
+  background-color: #25252a;
+  border-radius: 50px;
+  transition: all 0.2s linear;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #3ddc84;
+  transition: all 0.2s linear;
+  color: black;
+}
+
+/* Contact colors */
+
+/* Contact */
+
+
+
+.toggle{
+  position: absolute;
+  top: 2rem;
+  right: 10%;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  display: none;
+}
+
+.toggle .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #3ddc84;
+  border-radius: 10px;
+}
+
+
+@media(max-width:820px){
+  .toggle{
+    display: flex;
+  }
+
+  .nav-links{
+    display: none;
+  }
+  .nav-links, .Contact-Button{
+   
+    width: 100%;
+  }
+  .nav-links{
+    width: 100%;
+    text-align: center;
+  }
+  .n{
+    text-align: center;
+    width: 100%;
+  }
+  header ,.nav-links, li, .Contact-Button  {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+
+  .nav-links ul{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links  li{
+    padding: 13px 130px;
+    width: 100%;
+  }
+
+  .nav-links li a{
+    padding: 15px 1px;
+    border-radius: 100px;
+  }
+
+  .nav-links li a:hover{
+    padding: 15px 0px;
+    border-radius: 100px;
+  }
+  .Contact-Button{
+    padding: 20px 0;
+  }
+
+  .nav-links.active{
+    display: flex;
+  }
+ 
+}
